@@ -78,7 +78,7 @@ export default function App() {
       >
         <div className="container mx-auto px-6 flex justify-between items-center">
           <div className="flex items-center gap-2">
-            <span className="font-heading text-3xl font-bold tracking-tight text-text-primary">
+            <span className="font-heading text-2xl md:text-3xl font-bold tracking-tight text-text-primary">
               NAPRAWA <span className="text-orange-primary">DACHÓW</span>
             </span>
           </div>
@@ -139,10 +139,10 @@ export default function App() {
             className="max-w-4xl"
           >
             <SectionLabel text="Profesjonalny serwis dachowy" />
-            <h1 className="font-heading text-6xl md:text-8xl lg:text-[110px] leading-[0.9] font-bold uppercase tracking-tight text-text-primary mb-8">
+            <h1 className="font-heading text-5xl sm:text-6xl md:text-8xl lg:text-[110px] leading-[0.9] font-bold uppercase tracking-tight text-text-primary mb-8">
               MOC <span className="text-orange-primary italic">PRZEMYSŁOWEJ</span> PRECYZJI
             </h1>
-            <p className="font-sans text-xl md:text-2xl text-text-secondary max-w-2xl leading-relaxed mb-12">
+            <p className="font-sans text-lg md:text-2xl text-text-secondary max-w-2xl leading-relaxed mb-12">
               Od kładzenia papy termo po wymianę więźby dachowej. Gwarantujemy szczelność i solidność wykonania, na której możesz polegać przez lata.
             </p>
             <div className="flex flex-col sm:flex-row gap-6">
@@ -163,16 +163,16 @@ export default function App() {
 
 
       {/* Services Section */}
-      <section id="services" className="py-32 relative bg-bg-dark">
+      <section id="services" className="py-20 md:py-32 relative bg-bg-dark">
         <div className="container mx-auto px-6">
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 md:mb-20 gap-8 text-left">
             <div className="max-w-2xl">
               <SectionLabel text="Nasze specjalizacje" />
-              <h2 className="font-heading text-5xl md:text-6xl font-bold uppercase tracking-tight text-white italic">
+              <h2 className="font-heading text-4xl md:text-6xl font-bold uppercase tracking-tight text-white italic">
                 ZAKRES <span className="text-orange-primary">OPERACYJNY</span>
               </h2>
             </div>
-            <div className="flex flex-col text-right md:items-end">
+            <div className="flex flex-col md:text-right md:items-end">
               <p className="text-text-muted max-w-sm mb-4">
                 Wykorzystujemy materiały najwyższej jakości i techniki sprawdzone w ekstremalnych warunkach.
               </p>
@@ -209,25 +209,25 @@ export default function App() {
       </section>
 
       {/* Heavy Machinery (Features) Section */}
-      <section id="about" className="relative py-32 bg-bg-light noise-texture overflow-hidden">
+      <section id="about" className="relative py-24 md:py-32 bg-bg-light noise-texture overflow-hidden">
         {/* Angular cut */}
         <div className="absolute top-0 left-0 w-full h-24 bg-bg-dark" style={{ clipPath: 'polygon(0 0, 100% 0, 0 100%)' }} />
         
         <div className="container mx-auto px-6 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-20 items-center">
             <div>
               <div className="flex items-center gap-4 mb-6">
                 <div className="h-[2px] w-12 bg-orange-primary" />
                 <span className="font-ui text-[11px] font-bold tracking-[0.25em] text-orange-primary uppercase">O Naszej Firmie</span>
               </div>
-              <h2 className="font-heading text-5xl md:text-7xl font-bold uppercase tracking-tight text-bg-dark mb-10 leading-[0.9]">
+              <h2 className="font-heading text-4xl md:text-7xl font-bold uppercase tracking-tight text-bg-dark mb-10 leading-[0.9]">
                 SOLIDNE FUNDAMENTY NA <span className="text-orange-primary">WYSOKOŚCI</span>
               </h2>
-              <p className="text-lg text-text-dark-muted leading-relaxed mb-10">
+              <p className="text-base md:text-lg text-text-dark-muted leading-relaxed mb-10">
                 Podejmujemy się najtrudniejszych wyzwań. Nasz zespół to doświadczeni profesjonaliści, dla których dach to najważniejsza tarcza budynku. Czy to rutynowa konserwacja, czy awaryjna naprawa przecieku – działamy z bezwzględną precyzją.
               </p>
               
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-12 lg:mb-0">
                 <div className="flex gap-4">
                   <div className="shrink-0 w-12 h-12 bg-bg-dark flex items-center justify-center text-orange-primary">
                     <Shield />
@@ -249,7 +249,7 @@ export default function App() {
               </div>
             </div>
 
-            <div className="relative group">
+            <div className="relative group max-w-lg mx-auto lg:max-w-none">
               <div className="aspect-square bg-bg-concrete p-2 border-4 border-bg-dark overflow-hidden">
                  <img 
                   src="https://i.postimg.cc/bNDnRfvK/660417881-122096479940847088-6805631884723164321-n.jpg" 
@@ -258,9 +258,9 @@ export default function App() {
                 />
               </div>
               {/* Decorative elements */}
-              <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-orange-primary/10 -z-10" />
-              <div className="absolute -top-10 -left-10 w-40 h-40 corrugated-metal opacity-20 -z-10" />
-              <div className="absolute bottom-6 right-6 bg-orange-primary text-white p-8 italic font-heading text-2xl font-bold">
+              <div className="absolute -bottom-6 md:-bottom-10 -right-6 md:-right-10 w-24 md:w-40 h-24 md:h-40 bg-orange-primary/10 -z-10" />
+              <div className="absolute -top-6 md:-top-10 -left-6 md:-left-10 w-24 md:w-40 h-24 md:h-40 corrugated-metal opacity-20 -z-10" />
+              <div className="absolute bottom-4 right-4 md:bottom-6 md:right-6 bg-orange-primary text-white p-4 md:p-8 italic font-heading text-xl md:text-2xl font-bold">
                 JAKOŚĆ BEZ KOMPROMISÓW
               </div>
             </div>
@@ -269,34 +269,34 @@ export default function App() {
       </section>
 
       {/* CTA Section */}
-      <section id="contact" className="py-32 bg-bg-dark relative overflow-hidden">
+      <section id="contact" className="py-20 md:py-32 bg-bg-dark relative overflow-hidden">
         <div className="absolute top-0 right-0 w-1/3 h-full corrugated-metal opacity-10" />
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-4xl mx-auto bg-bg-card border-l-[10px] border-orange-primary p-10 md:p-20 shadow-2xl rust-stripe-top">
-            <h2 className="font-heading text-4xl md:text-6xl font-bold uppercase text-text-primary mb-6 italic">Masz problem z dachem?</h2>
-            <p className="font-sans text-xl text-text-secondary mb-12 max-w-2xl">
+        <div className="container mx-auto px-4 md:px-6 relative z-10">
+          <div className="max-w-4xl mx-auto bg-bg-card border-l-[10px] border-orange-primary p-6 md:p-20 shadow-2xl rust-stripe-top">
+            <h2 className="font-heading text-3xl md:text-6xl font-bold uppercase text-text-primary mb-6 italic">Masz problem z dachem?</h2>
+            <p className="font-sans text-lg md:text-xl text-text-secondary mb-12 max-w-2xl">
               Skontaktuj się bezpośrednio z naszym mistrzem dekarstwa. Gwarantujemy uczciwą wycenę i szybki termin realizacji.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               <div className="space-y-8">
-                <a href="tel:723284261" className="flex items-center gap-6 group">
-                  <div className="w-16 h-16 bg-orange-primary flex items-center justify-center shrink-0 transition-transform group-hover:rotate-12">
-                    <Phone className="w-8 h-8 text-white" />
+                <a href="tel:723284261" className="flex items-center gap-4 md:gap-6 group">
+                  <div className="w-12 h-12 md:w-16 md:h-16 bg-orange-primary flex items-center justify-center shrink-0 transition-transform group-hover:rotate-12">
+                    <Phone className="w-6 h-6 md:w-8 md:h-8 text-white" />
                   </div>
                   <div>
-                    <span className="block text-xs font-ui font-bold text-text-muted uppercase tracking-widest mb-1 italic">Zadzwoń teraz</span>
-                    <span className="block font-heading text-4xl text-text-primary font-bold">723 284 261</span>
+                    <span className="block text-[10px] font-ui font-bold text-text-muted uppercase tracking-widest mb-1 italic">Zadzwoń teraz</span>
+                    <span className="block font-heading text-2xl md:text-4xl text-text-primary font-bold">723 284 261</span>
                   </div>
                 </a>
 
-                <a href="mailto:agatakwiat72@gmail.com" className="flex items-center gap-6 group">
-                  <div className="w-16 h-16 bg-bg-primary border border-orange-primary/30 flex items-center justify-center shrink-0 transition-transform group-hover:-rotate-12">
-                    <Mail className="w-8 h-8 text-orange-primary" />
+                <a href="mailto:agatakwiat72@gmail.com" className="flex items-center gap-4 md:gap-6 group">
+                  <div className="w-12 h-12 md:w-16 md:h-16 bg-bg-primary border border-orange-primary/30 flex items-center justify-center shrink-0 transition-transform group-hover:-rotate-12">
+                    <Mail className="w-6 h-6 md:w-8 md:h-8 text-orange-primary" />
                   </div>
-                  <div>
-                    <span className="block text-xs font-ui font-bold text-text-muted uppercase tracking-widest mb-1 italic">Napisz e-mail</span>
-                    <span className="block font-sans text-lg text-text-secondary font-medium">agatakwiat72@gmail.com</span>
+                  <div className="overflow-hidden">
+                    <span className="block text-[10px] font-ui font-bold text-text-muted uppercase tracking-widest mb-1 italic">Napisz e-mail</span>
+                    <span className="block font-sans text-sm md:text-lg text-text-secondary font-medium break-all md:break-normal">agatakwiat72@gmail.com</span>
                   </div>
                 </a>
               </div>
